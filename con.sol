@@ -27,7 +27,7 @@ contract FinalContract {
   
  function userSignArticles(address _address, bytes32[] _articles) public {
    for (uint i = 0; i < _articles.length; i++) userSignArticle(_address, _articles[i]);
-   usersList.push(_address); /* add user to known list if interaction */
+   usersList.push(_address);
  }
  
  function returnUserData(address _address) view public returns(bytes32[],uint) { 
